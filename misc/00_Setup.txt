@@ -1,0 +1,21 @@
+■インストール：Typescript
+gをつけることで、システム的にインストールする
+付与しなければ、プロジェクトにインストールすることになる
+npm i -g typescript
+npm i typescript
+
+下記のコマンドで、node_modulesにライブラリをインストールできる
+npm i --save-dev typescript
+npm i --save typescript
+
+package.jsonに記録が残る。
+その為 npm iで、再度ライブラリを復活させることができる
+
+■実行
+package.jsonに、"tsc": "tsc -t ES5"を登録する
+以下のコマンドをターミナルで実行する
+npm run tsc "パス名/ファイル名"
+npm run tsc misc/type.ts
+
+変換後のJavascriptをnode "file名"で実行する
+https://qiita.com/ochiochi/items/efdaa0ae7d8c972c8103
